@@ -1,0 +1,4 @@
+a = float(input("Ingrese el primer cateto: "))
+b = float(input("Ingrese el segundo cateto: "))
+c = (a ** 2 + b ** 2) ** 0.5 
+print(f"La hipotenusa del triangulo es: {c}")
