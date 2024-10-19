@@ -1,0 +1,3 @@
+lado = float(input("Ingrese el lado del cuadrado: "))
+perimetro = lado * 4
+print(f"El perímetro del cuadrado es: {perimetro}cm")
