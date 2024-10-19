@@ -1,0 +1,5 @@
+base_mayor = float(input("Ingrese la base mayor del trapecio: "))
+base_menor = float(input("Ingrese la base menor del trapecio: "))
+altura = float(input("Ingrese la altura del trapecio: "))
+area = ((base_mayor + base_menor) * altura) / 2
+print(f"El área del trapecio es: {area} cm")
