@@ -1,0 +1,5 @@
+monto = float(input("Ingresa el monto de la beca anterior: "))
+incremento = monto * .18
+monto_final = monto + incremento
+print("El incremento es de ", incremento)
+print("El monto de la beca es de ",monto_final)
