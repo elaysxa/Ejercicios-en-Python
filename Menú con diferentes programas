@@ -1,0 +1,40 @@
+print("Seleccione una opción")
+
+print("0. Salir del muenu")
+print("1. Calcular el área de un triangulo")
+print("2. Calcular el lado de un cuadrado")
+print("3. Calcular el área de un trapecio")
+print("4. Calcular el perímeetro de un cuadrado")
+print("5. Calcular el volumen de un cono")
+
+
+opcion = input("Ingrese una opción (1-5): ")
+
+if opcion == "1":
+    base = float(input("Ingrese la base del triangulo: "))
+    altura = float(input("Ingrese la altura del triangulo: "))
+    area = (base * altura) / 2
+    print(f"El área del triángulo es: {area} cm2" )
+elif opcion =="2":
+    lado = float(input("Ingrese el lado del cuadrado: "))
+    area = lado * lado
+    print(f"El área del cuadrado es: {area} cm2 ")
+elif opcion == "3":
+    base_mayor = float(input("Ingrese la base mayor del trapecio: "))
+    base_menor = float(input("Ingrese la base menor del trapecio: "))
+    altura = float(input("Ingrese la altura del trapecio: "))
+    area = ((base_mayor + base_menor) * altura) / 2
+    print(f"El área del trapecio es: {area} cm2")
+elif opcion =="4":
+    lado = float(input("Ingrese el lado del cuadrado: "))
+    perimetro = lado * 4
+    print(f"El perímetro del cuadrado es: {perimetro}cm")
+elif opcion == "5":
+    radio = float(input("Ingrese el radio del cono: "))
+    altura = float(input("Ingrese la altura del cono: "))
+    volumen = (3.1416 * radio ** 2 * altura) / 3
+    print(f"El volumen del cono es: {volumen} cm3")
+elif opcion == "0":
+    print("Ha salido del programa")
+else:
+    print("Opcion invalida")
