@@ -1,0 +1,20 @@
+def calculadora():
+
+  n1 = int(input('Digite um número: '))
+  n2 = int(input('Digite otro número: '))
+  operacion = input('Digite la operacion a realizar (+, -, *, /): ')
+
+  if operacion == '+':
+        resultado = n1 + n2
+  elif operacion == '-':
+        resultado = n1 - n2
+  elif operacion == '*':
+        resultado = n1 * n2
+  elif operacion == '/':
+        resultado = n1 / n2
+  else:
+      print('Operacion no valida')
+
+  return resultado
+
+print(calculadora())
