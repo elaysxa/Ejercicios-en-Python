@@ -1,0 +1,56 @@
+#Nomina de dos empleados
+print("Ingrese los datos del primer empleado")
+empleado1 = input("Ingrese el nombre del empleado: ")
+apellido1 = input("Ingrese el apellido del empleado: ")
+edad1 = int(input("Ingrese la edad del empleado: "))
+puesto1 = input("Ingrese el puesto del empleado: ")
+horas_trabajadas1 = int(input("Ingrese las horas trabajadas por empleado: "))
+precio_hora1 = float(input("Ingrese el precio por hora del empleado: "))
+tiene_seguro1 = input("El empleado tiene seguro?: ")
+print("---------------------------------")
+print("Ingrese los datos del segundo empleado")
+empleado2 = input("Ingrese el nombre del  empleado: ")
+apellido2 = input("Ingrese el apellido del  empleado: ")
+edad2 = int(input("Ingrese la edad del empleado: "))
+puesto2 = input("Ingrese el puesto del empleado: ")
+horas_trabajadas2 = int(input("Ingrese las horas trabajadas por el empleado: "))
+precio_hora2 = float(input("Ingrese el precio por hora del segundo empleado: "))
+tiene_seguro2 = input("El empleado tiene seguro?: ")
+
+sueldo_bruto1 = horas_trabajadas1 * precio_hora1
+sueldo_bruto2 = horas_trabajadas2 * precio_hora2
+
+if tiene_seguro1 == "si":
+     descuento1 = sueldo_bruto1 * 0.02
+     sueldo_neto1 = sueldo_bruto1 - descuento1
+
+     if tiene_seguro2 == "si":
+
+      descuento2 = sueldo_bruto2 * 0.02
+      sueldo_neto2 = sueldo_bruto2 - descuento2
+     else:
+        descuento2 = 0
+        sueldo_neto2 = sueldo_bruto2
+else:
+    descuento1 = 0
+    sueldo_neto1 = sueldo_bruto1
+
+print("Nomina de empleados")
+print("---------------------------------")
+print("Empleado 1")
+print(empleado1, apellido1)
+print(f"Su puesto es {puesto1}")
+print(f"Su precio por hora es {precio_hora1}")
+print(f"Ha trabajado {horas_trabajadas1} horas")
+print(f"Su sueldo bruto es {sueldo_bruto1}")
+print(f"Su descuento por seguro es de {descuento1}")
+print(f"Su sueldo neto es {sueldo_neto1}")
+print("---------------------------------")
+print("Empleado 2")
+print (empleado2, apellido2)
+print(f"Su puesto es {puesto2}")
+print(f"Su precio por hora es {precio_hora2}")
+print(f"Ha trabajado {horas_trabajadas2} horas")
+print(f"Su sueldo bruto es {sueldo_bruto2}")
+print(f"Su descuento por seguro es de {descuento2}")
+print(f"Su sueldo neto es {sueldo_neto2}")
