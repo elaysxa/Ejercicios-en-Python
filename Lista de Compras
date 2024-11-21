@@ -1,0 +1,10 @@
+lista_compra = [] #Inicializamos la lista
+while True:
+  #Inicia el bucle pidiendo al usuario que ingrese los articulos
+  articulos = input("Ingrese un artículo para la lista. Ingrese 0 para terminar: ")
+  if articulos == "0":
+   #si el usuario inserta 0 el bucle termina
+    break
+    #Se agregan a lista_compras con el metodo append
+  lista_compra.append(articulos)
+print("Lista de compras: ", lista_compra)
