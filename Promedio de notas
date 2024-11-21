@@ -1,0 +1,11 @@
+#Creamos una lista vacia
+notas = []
+cantidad = int(input("Ingrese la cantidad de materias: "))
+#iniciamos un bucle donde el rango es la cantidad de materias a calificar
+for _ in range(cantidad):
+    nota = float(input("Ingrese una nota: "))
+    #Agregamos las notas a la lista con el metodo append
+    notas.append(nota)
+    #Calculamos el promedio en el metodo sum() / el metodo len() para devolver la cantidad de elementos en notas
+promedio = sum(notas) / len(notas)
+print("El promedio de las notas es:", promedio)
